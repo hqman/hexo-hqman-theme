@@ -1,0 +1,9 @@
+<footer class="site-footer">
+  <% if (config.rss || config.feed) {  %>
+  <a class="subscribe icon-feed" href="<%= (config.rss || config.feed.path) %>"><span class="tooltip">Subscribe!</span></a>
+  <% } %>
+  <div class="inner">
+     <section class="copyright">   &copy;<a href="<%- config.root %>"><%- config.title %></a> 2015    </section>
+
+  </div>
+</footer>

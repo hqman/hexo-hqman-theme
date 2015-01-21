@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<%- partial('hqman/head') %>
+<% if (typeof page.title == 'undefined') { %>
+<body class="home-template">
+<% } else { %>
+<body class="post-template">
+<% } %>
+  <%- partial('hqman/header') %>
+  <%- body %>
+  <%- partial('hqman/footer') %>
+
+<%- partial('hqman/bottomjs') %>
+<!-- TODO JS  -->
+</body>
+</html>

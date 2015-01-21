@@ -1,0 +1,20 @@
+<!-- <div id="nprogress"><div class="bar" role="bar"  ><div class="peg"></div></div> -->
+<div class="spinner" role="spinner"> </div></div></div>
+<header class="site-head">
+
+   <div id="blog-title">
+      <a href="/"><div id="logo"></div></a>
+   </div>
+
+    <nav class="nav">
+    <ul>
+    <li class="weblink"><a href="/" <% if (url_for(path)== '/') { %>class="active"<% } %>>Home</a></li>
+    <li class="weblink"><a href="/about" <% if (url_for(path)== '/about/index.html') { %>class="active"<% } %>>About </a></li>
+    <li class="weblink"><a href="/archives" <% if (url_for(path)== '/archives/index.html') { %>class="active"<% } %>>Archive</a></li>
+
+    <li  class="weblink"><a href="<%= (config.rss || "") %>"><i class="fa fa-rss-square fa-4"></i></a></li>
+       </ul>
+    </nav>
+</header>
+
+
